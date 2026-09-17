@@ -1,49 +1,25 @@
-<<<<<<< HEAD
-# Elevator Web — Website thiết bị thang máy (Next.js 16 + Tailwind 4)
+# TAKITA
 
-Website giới thiệu sản phẩm chuẩn SEO, build tĩnh hoàn toàn, deploy Vercel.
+Website giới thiệu và cung cấp thiết bị xây dựng của TAKITA (Tân Kiến Tạo).
 
-## Chạy thử
+## Công nghệ
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+
+## Nội dung website
+
+Website giới thiệu các sản phẩm và phụ tùng thiết bị xây dựng, bao gồm:
+
+- Cẩu tháp
+- Vận thăng
+- Phụ tùng cẩu tháp
+- Phụ tùng vận thăng
+- Thiết bị và phụ kiện xây dựng
+
+## Chạy project
 
 ```bash
 npm install
-npm run dev     # http://localhost:3000
-```
-
-## Thay dữ liệu thật
-
-1. **Ảnh**: bỏ 10 ảnh của bạn vào `public/images/products/`, đặt tên **trùng với `slug`** của sản phẩm và đuôi `.webp`.
-   Ví dụ sản phẩm có `slug: "cua-tang-thang-may-inox-304"` → file `cua-tang-thang-may-inox-304.webp`.
-2. **Nội dung**: sửa mảng `products` trong `src/data/products.ts`.
-3. **Thông tin công ty**: sửa `src/lib/seo.ts` (tên, hotline, địa chỉ, domain).
-4. Ảnh trong repo hiện là ảnh minh hoạ tự sinh — nhớ thay hết.
-
-## Đưa lên GitHub
-
-```bash
-git init
-git add .
-git commit -m "init: elevator product site"
-git branch -M main
-git remote add origin https://github.com/<username>/elevator-web.git
-git push -u origin main
-```
-
-## Deploy Vercel
-
-1. vercel.com → đăng nhập bằng GitHub → **Add New → Project** → chọn repo.
-2. Giữ nguyên cấu hình mặc định (Vercel tự nhận Next.js) → **Deploy**.
-3. Vào **Settings → Environment Variables**, thêm:
-   `NEXT_PUBLIC_SITE_URL = https://domain-that-cua-ban.com`
-   rồi redeploy. Biến này quyết định canonical, OG và sitemap có đúng domain hay không.
-4. Có domain riêng: **Settings → Domains** → thêm domain → trỏ DNS theo hướng dẫn.
-
-## Sau khi deploy
-
-- Kiểm tra `https://domain/sitemap.xml` và `https://domain/robots.txt` đã ra đúng.
-- Google Search Console → thêm property → submit sitemap.
-- Chạy Lighthouse, kiểm tra JSON-LD bằng Rich Results Test.
-=======
-# TAKITA
-TAKITA - Website giới thiệu và cung cấp thiết bị xây dựng
->>>>>>> 27aee295c9dcf43b21076d5afeb9c3532124f360
+npm run dev
