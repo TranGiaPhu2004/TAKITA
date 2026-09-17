@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Elevator Web — Website thiết bị thang máy (Next.js 16 + Tailwind 4)
 
 Website giới thiệu sản phẩm chuẩn SEO, build tĩnh hoàn toàn, deploy Vercel.
@@ -42,3 +43,7 @@ git push -u origin main
 - Kiểm tra `https://domain/sitemap.xml` và `https://domain/robots.txt` đã ra đúng.
 - Google Search Console → thêm property → submit sitemap.
 - Chạy Lighthouse, kiểm tra JSON-LD bằng Rich Results Test.
+=======
+# TAKITA
+TAKITA - Website giới thiệu và cung cấp thiết bị xây dựng
+>>>>>>> 27aee295c9dcf43b21076d5afeb9c3532124f360
