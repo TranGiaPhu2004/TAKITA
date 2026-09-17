@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* Bật biến thể dark: theo class trên thẻ <html> (ThemeToggle điều khiển) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Design token: đổi màu thương hiệu ở đây ---------- */
+:root {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --surface-2: #eef1f5;
+  --ink: #10151c;
+  --ink-2: #4a5566;
+  --ink-3: #7c8898;
+  --line: #dde2e9;
+  --brass: #b5842f;
+  --brass-soft: #f3e3c4;
+  --steel: #1d2a3a;
+  --accent: #0f4c81;
+}
+
+.dark {
+  --bg: #0b0f14;
+  --surface: #121820;
+  --surface-2: #19212b;
+  --ink: #eef2f7;
+  --ink-2: #a8b4c4;
+  --ink-3: #7a869a;
+  --line: #242e3a;
+  --brass: #d7a850;
+  --brass-soft: #3a2f18;
+  --steel: #cfd8e3;
+  --accent: #63a4dd;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-brass: var(--brass);
+  --color-brass-soft: var(--brass-soft);
+  --color-steel: var(--steel);
+  --color-accent: var(--accent);
+
+  --font-sans: var(--font-be-vietnam), system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 {
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-[1180px] px-5;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-brass-soft px-3 py-1.5
+           text-[0.72rem] font-bold uppercase tracking-[0.14em] text-brass;
+  }
+}
+
+/* Tailwind v4: @apply chỉ dùng được với utility "thật".
+   Muốn tự định nghĩa rồi cho class khác @apply lại, phải khai báo
+   bằng @utility (không đặt trong @layer components). */
+@utility btn {
+  @apply inline-flex items-center gap-2 rounded-xl px-5 py-3 text-[0.93rem] font-semibold transition;
+}
+@utility btn-primary {
+  @apply btn bg-brass text-[#1a1205] hover:brightness-110;
+}
+@utility btn-ghost {
+  @apply btn border border-line text-ink hover:border-ink-3;
+}
