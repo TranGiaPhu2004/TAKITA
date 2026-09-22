@@ -4,10 +4,22 @@ import { useState } from "react";
 import { categories } from "@/data/products";
 
 type Status = "idle" | "sending" | "sent" | "error";
+type FormState = {
+  name: string;
+  phone: string;
+  email: string;
+  category: string;
+  message: string;
+};
+type Errors = Partial<Record<keyof FormState, string>>;
+
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const phonePattern = /^(?:\+84|0)(?:\d[ .-]?){8,10}\d$/;
 
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
-  const [form, setForm] = useState({
+  const [errors, setErrors] = useState<Errors>({});
+  const [form, setForm] = useState<FormState>({
     name: "",
     phone: "",
     email: "",
@@ -18,19 +30,40 @@ export default function ContactForm() {
   const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
     setForm({ ...form, [k]: e.target.value });
 
-  async function submit() {
-    if (!form.name || !form.phone) return;
+  function validate(): Errors {
+    const nextErrors: Errors = {};
+    if (form.name.trim().length < 2 || form.name.trim().length > 100) nextErrors.name = "Vui lòng nhập họ tên từ 2 đến 100 ký tự";
+    if (!phonePattern.test(form.phone.trim())) nextErrors.phone = "Vui lòng nhập số điện thoại hợp lệ";
+    if (form.email && (form.email.trim().length > 254 || !emailPattern.test(form.email.trim()))) nextErrors.email = "Vui lòng nhập email hợp lệ";
+    if (!form.category) nextErrors.category = "Vui lòng chọn nhóm sản phẩm";
+    if (form.message.length > 2000) nextErrors.message = "Nội dung không được vượt quá 2.000 ký tự";
+    return nextErrors;
+  }
+
+  async function submit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const nextErrors = validate();
+    setErrors(nextErrors);
+    if (Object.keys(nextErrors).length > 0) {
+      setStatus("idle");
+      return;
+    }
     setStatus("sending");
     try {
-      // Bản demo chỉ gọi route handler mẫu.
-      // Thực tế: gửi sang Resend / Google Sheet / CRM của bạn.
-      await fetch("/api/lien-he", {
+      const response = await fetch("/api/lien-he", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
+      if (!response.ok) {
+        const result = await response.json().catch(() => null) as { error?: string } | null;
+        throw new Error(result?.error ?? "Gửi yêu cầu thất bại");
+      }
       setStatus("sent");
-    } catch {
+    } catch (error) {
+      if (error instanceof Error && error.message) {
+        setErrors({ ...nextErrors, message: error.message });
+      }
       setStatus("error");
     }
   }
@@ -40,41 +73,49 @@ export default function ContactForm() {
     "text-ink outline-none focus:border-brass focus:ring-2 focus:ring-brass/40";
 
   return (
-    <div className="grid gap-3.5">
+    <form onSubmit={submit} className="grid gap-3.5" noValidate>
       <div className="grid gap-3.5 sm:grid-cols-2">
         <Field label="Họ và tên *" htmlFor="name">
-          <input id="name" className={input} value={form.name} onChange={set("name")} placeholder="Nguyễn Văn A" />
+          <input id="name" required maxLength={100} aria-invalid={!!errors.name} aria-describedby={errors.name ? "name-error" : undefined} className={input} value={form.name} onChange={set("name")} placeholder="Nguyễn Văn A" />
+          <ErrorMessage id="name-error" message={errors.name} />
         </Field>
         <Field label="Số điện thoại *" htmlFor="phone">
-          <input id="phone" className={input} value={form.phone} onChange={set("phone")} placeholder="09xx xxx xxx" />
+          <input id="phone" required maxLength={20} aria-invalid={!!errors.phone} aria-describedby={errors.phone ? "phone-error" : undefined} className={input} value={form.phone} onChange={set("phone")} placeholder="09xx xxx xxx" />
+          <ErrorMessage id="phone-error" message={errors.phone} />
         </Field>
       </div>
 
       <Field label="Email" htmlFor="email">
-        <input id="email" type="email" className={input} value={form.email} onChange={set("email")} placeholder="ban@congty.vn" />
+        <input id="email" type="email" maxLength={254} aria-invalid={!!errors.email} aria-describedby={errors.email ? "email-error" : undefined} className={input} value={form.email} onChange={set("email")} placeholder="ban@congty.vn" />
+        <ErrorMessage id="email-error" message={errors.email} />
       </Field>
 
       <Field label="Nhóm sản phẩm quan tâm" htmlFor="category">
-        <select id="category" className={input} value={form.category} onChange={set("category")}>
+        <select id="category" required aria-invalid={!!errors.category} aria-describedby={errors.category ? "category-error" : undefined} className={input} value={form.category} onChange={set("category")}>
           {categories.map((c) => (
             <option key={c}>{c}</option>
           ))}
         </select>
+        <ErrorMessage id="category-error" message={errors.category} />
       </Field>
 
       <Field label="Nội dung" htmlFor="message">
         <textarea
           id="message"
           rows={4}
+          maxLength={2000}
+          aria-invalid={!!errors.message}
+          aria-describedby={errors.message ? "message-error" : undefined}
           className={input}
           value={form.message}
           onChange={set("message")}
           placeholder="Mô tả tải trọng, số tầng, số lượng cần báo giá..."
         />
+        <ErrorMessage id="message-error" message={errors.message} />
       </Field>
 
       <div className="flex items-center gap-3">
-        <button onClick={submit} disabled={status === "sending"} className="btn-primary disabled:opacity-60">
+        <button type="submit" disabled={status === "sending"} className="btn-primary disabled:opacity-60">
           {status === "sending" ? "Đang gửi..." : "Gửi yêu cầu"}
         </button>
         {status === "sent" && (
@@ -88,8 +129,13 @@ export default function ContactForm() {
           </span>
         )}
       </div>
-    </div>
+    </form>
   );
+}
+
+function ErrorMessage({ id, message }: { id: string; message?: string }) {
+  if (!message) return null;
+  return <p id={id} className="mt-1 text-[0.78rem] text-red-500">{message}</p>;
 }
 
 function Field({
