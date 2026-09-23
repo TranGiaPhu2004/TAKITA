@@ -18,7 +18,7 @@ export const siteConfig = {
   phone: "0946 867 978",
   phoneE164: "+8446867978",
   hotlineKyThuat: "0946 867 978",
-  email: "danguyentkt@gmail.com",
+  email: "trangiaphuc0502@gmail.com",
   address: {
     street: "101 Đường số 2, Khu đô thị Vạn Phúc, P. Hiệp Bình Phước",
     district: "Thủ Đức",

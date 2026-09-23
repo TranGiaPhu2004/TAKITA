@@ -125,7 +125,7 @@ export default function ContactForm() {
         )}
         {status === "error" && (
           <span className="text-[0.88rem] font-semibold text-red-500">
-            Gửi thất bại, vui lòng gọi hotline
+            Gửi thất bại, vui lòng gọi hotline, hoặc gửi email trực tiếp cho nhân viên tư vấn trangiaphuc0502@gmail.com
           </span>
         )}
       </div>

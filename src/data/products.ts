@@ -17,8 +17,8 @@ export type Product = {
 export const categories = [
   "Phụ tùng vận thăng",
   "Phụ tùng cẩu tháp",
-  "Thiết bị điều khiển",
   "Thiết bị xây dựng",
+  "Phụ tùng bơm bê tông",
 ] as const;
 
 export type Category = (typeof categories)[number];
@@ -248,7 +248,7 @@ export const products: Product[] = [
   {
     slug: "ban-dieu-khien-van-thang",
     name: "Bàn điều khiển vận thăng",
-    category: "Thiết bị điều khiển",
+    category: "Phụ tùng vận thăng",
 
     shortDesc:
       "Bàn điều khiển vận thăng phục vụ vận hành nâng hạ, bố trí nút điều khiển và dừng khẩn phù hợp cho công trường.",
@@ -502,7 +502,383 @@ export const products: Product[] = [
       },
     ],
   },
-];
+
+  {
+    slug: "co-ong-be-tong",
+    name: "Co ống bê tông",
+    category: "Phụ tùng bơm bê tông",
+
+    shortDesc:
+      "Co ống bê tông dùng để thay đổi hướng tuyến ống trong hệ thống bơm bê tông, cung cấp theo đường kính, bán kính và góc uốn phù hợp.",
+
+    description:
+      "Co ống bê tông là phụ kiện dùng trong hệ thống đường ống bơm bê tông, có chức năng thay đổi hướng tuyến ống tại công trường. Sản phẩm có nhiều cấu hình về đường kính, bán kính và góc uốn, phù hợp với các yêu cầu khác nhau của hệ thống bơm bê tông.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("co-ong-be-tong"),
+
+    alt: "Co ống bê tông dùng trong hệ thống bơm bê tông",
+
+    featured: true,
+
+    specs: [
+      {
+        label: "Loại sản phẩm",
+        value: "Co ống bê tông",
+      },
+      {
+        label: "Đường kính",
+        value: "DN125, DN150, DN175",
+      },
+      {
+        label: "Góc uốn",
+        value: "15°, 20°, 25°, 45°, 90° và các cấu hình khác",
+      },
+      {
+        label: "Bán kính",
+        value: "Theo cấu hình sản phẩm",
+      },
+      {
+        label: "Vật liệu",
+        value: "Thép và vật liệu chống mài mòn theo từng loại",
+      },
+      {
+        label: "Công nghệ",
+        value: "Đúc",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Hệ thống đường ống bơm bê tông",
+      },
+    ],
+  },
+
+  {
+    slug: "cum-ong-be-tong",
+    name: "Cùm ống bê tông",
+    category: "Phụ tùng bơm bê tông",
+
+    shortDesc:
+      "Cùm ống bê tông dùng để liên kết các đoạn ống và phụ kiện trong hệ thống bơm bê tông, cung cấp theo đường kính và kiểu kết nối phù hợp.",
+
+    description:
+      "Cùm ống bê tông là phụ kiện liên kết dùng trong hệ thống đường ống bơm bê tông, hỗ trợ kết nối các đoạn ống và phụ kiện có mặt bích. Sản phẩm có nhiều kiểu cấu tạo như cùm bulông, cùm chốt, cùm điều chỉnh và cùm nêm, được lựa chọn theo đường kính và cấu hình kết nối của hệ thống.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("goi-do-ong-be-tong"),
+
+    alt: "Cùm ống bê tông dùng để kết nối đường ống bơm bê tông",
+
+    gallery: [
+      {
+        src: img("cum-ong-be-tong"),
+        alt: "Cùm ống bê tông dùng trong hệ thống bơm bê tông",
+      },
+    ],
+
+    featured: true,
+
+    specs: [
+      {
+        label: "Loại sản phẩm",
+        value: "Cùm ống bê tông",
+      },
+      {
+        label: "Đường kính",
+        value: "DN125",
+      },
+      {
+        label: "Đường kính mặt bích",
+        value: "148 mm / 157 mm",
+      },
+      {
+        label: "Vật liệu",
+        value: "40Cr",
+      },
+      {
+        label: "Công nghệ",
+        value: "Rèn hoặc đúc",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Máy móc xây dựng và đường ống bơm bê tông",
+      },
+    ],
+  },
+
+  {
+    slug: "ong-bom-be-tong",
+    name: "Ống bơm bê tông",
+    category: "Phụ tùng bơm bê tông",
+
+    shortDesc:
+      "Ống bơm bê tông dùng để vận chuyển bê tông trong hệ thống bơm, có nhiều lựa chọn về chiều dài, độ dày và kiểu đầu nối.",
+
+    description:
+      "Ống bơm bê tông là bộ phận dùng để vận chuyển bê tông từ máy bơm đến vị trí thi công. Sản phẩm sử dụng vật liệu ST52, có nhiều lựa chọn về chiều dài, độ dày và kiểu đầu nối, phù hợp cho nhu cầu lắp đặt, thay thế và mở rộng hệ thống đường ống bơm bê tông.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("ong-bom-be-tong"),
+
+    alt: "Ống bơm bê tông dùng trong hệ thống bơm bê tông",
+
+    featured: true,
+
+    specs: [
+      {
+        label: "Loại sản phẩm",
+        value: "Ống bơm bê tông",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Vận chuyển bê tông",
+      },
+      {
+        label: "Chiều dài",
+        value: "1–6 m hoặc theo yêu cầu",
+      },
+      {
+        label: "Vật liệu",
+        value: "ST52",
+      },
+      {
+        label: "Độ dày",
+        value: "4.0 / 4.5 / 5.0 / 5.5 mm và các tùy chọn khác",
+      },
+      {
+        label: "Khả năng phục vụ",
+        value: "12.000 / 15.000 / 25.000 / 35.000 / 50.000 m³",
+      },
+      {
+        label: "Kiểu đầu nối",
+        value: "SK, ZX, MF, HD flange",
+      },
+      {
+        label: "Đặc điểm",
+        value: "Khả năng chống mài mòn cao, tuổi thọ sử dụng dài",
+      },
+    ],
+  },
+
+  {
+    slug: "banh-xe-con-cho-cau-thap",
+    name: "Bánh xe con cho cẩu tháp",
+    category: "Phụ tùng cẩu tháp",
+
+    shortDesc:
+      "Bánh xe con lăn cẩu tháp là bộ phận thuộc cụm xe con, hỗ trợ di chuyển và dẫn hướng xe con dọc theo cần cẩu tháp.",
+
+    description:
+      "Bánh xe con lăn cẩu tháp là phụ tùng thuộc cụm xe con của cẩu tháp, được sử dụng để hỗ trợ chuyển động và dẫn hướng trong quá trình xe con di chuyển dọc theo cần. Sản phẩm được lựa chọn theo mẫu, kích thước và cấu hình thực tế của cẩu tháp, phù hợp cho nhu cầu thay thế, bảo trì và sửa chữa thiết bị.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("banh-xe-con-cho-cau-thap"),
+
+    alt: "Bánh xe con cho cẩu tháp",
+
+    featured: true,
+
+    specs: [
+      {
+        label: "Loại sản phẩm",
+        value: "Bánh xe con lăn",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Cẩu tháp",
+      },
+      {
+        label: "Chức năng",
+        value: "Di chuyển và dẫn hướng",
+      },
+      {
+        label: "Tương thích",
+        value: "Theo mẫu và kích thước thiết bị",
+      },
+      {
+        label: "Cung cấp",
+        value: "Theo mẫu thực tế",
+      },
+    ],
+  },
+
+  {
+    slug: "bom-rua-ap-luc-cao-cho-may-bom-be-tong",
+    name: "Bơm rửa áp lực cao cho máy bơm bê tông",
+    category: "Phụ tùng bơm bê tông",
+
+    shortDesc:
+      "Bơm rửa áp lực cao dùng để vệ sinh đường ống và hệ thống máy bơm bê tông sau khi thi công.",
+
+    description:
+      "Bơm rửa áp lực cao cho máy bơm bê tông là thiết bị hỗ trợ vệ sinh đường ống và các bộ phận liên quan sau quá trình bơm. Sản phẩm giúp làm sạch hệ thống, phục vụ công tác bảo trì và duy trì hiệu quả vận hành của máy bơm bê tông.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("bom-rua-ap-luc-cao-cho-may-bom-be-tong"),
+
+    alt: "Bơm rửa áp lực cao cho máy bơm bê tông",
+
+    featured: true,
+
+    specs: [
+      {
+        label: "Loại sản phẩm",
+        value: "Bơm rửa áp lực cao",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Máy bơm bê tông",
+      },
+      {
+        label: "Chức năng",
+        value: "Vệ sinh đường ống và hệ thống bơm",
+      },
+      {
+        label: "Mục đích",
+        value: "Bảo trì sau thi công",
+      },
+      {
+        label: "Cung cấp",
+        value: "Theo mẫu và thông số thiết bị",
+      },
+    ],
+  },
+
+  {
+    slug: "mo-boi-tron-goc-lithium-cho-may-bom-be-tong",
+    name: "Mỡ bôi trơn gốc lithium cho máy bơm bê tông",
+    category: "Phụ tùng bơm bê tông",
+
+    shortDesc:
+      "Mỡ bôi trơn gốc lithium dùng để bôi trơn và bảo vệ các chi tiết cơ khí trong máy bơm bê tông.",
+
+    description:
+      "Mỡ bôi trơn gốc lithium cho máy bơm bê tông được sử dụng để bôi trơn các chi tiết cơ khí, hỗ trợ giảm ma sát và bảo vệ bộ phận trong quá trình vận hành. Sản phẩm phù hợp cho công tác bảo dưỡng máy bơm bê tông theo khuyến nghị của thiết bị.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("mo-boi-tron-goc-lithium-cho-may-bom-be-tong"),
+
+    alt: "Mỡ bôi trơn gốc lithium cho máy bơm bê tông",
+
+    featured: true,
+
+    specs: [
+      {
+        label: "Loại sản phẩm",
+        value: "Mỡ bôi trơn gốc lithium",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Máy bơm bê tông",
+      },
+      {
+        label: "Chức năng",
+        value: "Bôi trơn và bảo vệ chi tiết cơ khí",
+      },
+      {
+        label: "Tác dụng",
+        value: "Hỗ trợ giảm ma sát",
+      },
+      {
+        label: "Cung cấp",
+        value: "Theo nhu cầu bảo dưỡng thiết bị",
+      },
+    ],
+  },
+
+  {
+    slug: "motor-thuy-luc-bom-be-tong",
+    name: "Motor thủy lực bơm bê tông",
+    category: "Phụ tùng bơm bê tông",
+
+    shortDesc:
+      "Motor thủy lực dùng trong hệ thống truyền động của máy bơm bê tông, cung cấp theo mẫu và thông số thực tế.",
+
+    description:
+      "Motor thủy lực bơm bê tông là phụ tùng thuộc hệ thống truyền động thủy lực của máy bơm bê tông. Sản phẩm được cung cấp theo mẫu, thông số và cấu hình thực tế của thiết bị, phù hợp cho nhu cầu thay thế và sửa chữa tại công trình.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("motor-thuy-luc-bom-be-tong"),
+
+    alt: "Motor thủy lực bơm bê tông",
+
+    featured: true,
+
+    specs: [
+      {
+        label: "Loại sản phẩm",
+        value: "Motor thủy lực",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Máy bơm bê tông",
+      },
+      {
+        label: "Chức năng",
+        value: "Truyền động thủy lực",
+      },
+      {
+        label: "Tương thích",
+        value: "Theo mẫu và thông số thiết bị",
+      },
+      {
+        label: "Cung cấp",
+        value: "Theo mẫu thực tế",
+      },
+    ],
+  },
+
+  {
+    slug: "van-chong-tut-bom-be-tong",
+    name: "Van chống tụt bơm bê tông",
+    category: "Phụ tùng bơm bê tông",
+
+    shortDesc:
+      "Van chống tụt dùng trong hệ thống bơm bê tông, hỗ trợ kiểm soát dòng vật liệu và hạn chế hiện tượng tụt trong đường ống.",
+
+    description:
+      "Van chống tụt bơm bê tông là phụ tùng dùng trong hệ thống bơm để hỗ trợ kiểm soát dòng bê tông và hạn chế hiện tượng tụt trong đường ống. Sản phẩm được lựa chọn theo mẫu, kích thước và cấu hình phù hợp với máy bơm bê tông.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("van-chong-tut-bom-be-tong"),
+
+    alt: "Van chống tụt bơm bê tông",
+
+    featured: true,
+
+    specs: [
+      {
+        label: "Loại sản phẩm",
+        value: "Van chống tụt",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Máy bơm bê tông",
+      },
+      {
+        label: "Chức năng",
+        value: "Kiểm soát dòng bê tông",
+      },
+      {
+        label: "Tác dụng",
+        value: "Hạn chế hiện tượng tụt trong đường ống",
+      },
+      {
+        label: "Tương thích",
+        value: "Theo mẫu và kích thước thiết bị",
+      },
+    ],
+  },
+
+  ];
 
 export const getProductBySlug = (slug: string) =>
   products.find((p) => p.slug === slug);
