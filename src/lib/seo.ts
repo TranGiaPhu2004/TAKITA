@@ -23,6 +23,8 @@ export const siteConfig = {
     tiktok: "https://www.tiktok.com/@takitasg",
     facebook: "https://www.facebook.com/PhuTungThietBiNang",
     youtube: "https://www.youtube.com/@TAKITAVN",
+    instagram: "https://www.instagram.com/danguyentkt/",
+    x: "https://x.com/tdanguyentkt",
   },
   address: {
     street: "101 Đường số 2, Khu đô thị Vạn Phúc, P. Hiệp Bình Phước",

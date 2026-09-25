@@ -1749,21 +1749,21 @@ export const products: Product[] = [
 },
 
 {
-  slug: "giam-chan-m7",
-  name: "Giảm chấn M7",
+  slug: "giam-chan-mt7",
+  name: "Giảm chấn MT7",
   category: "Phụ tùng vận thăng",
 
   shortDesc:
-    "Giảm chấn M7 dùng cho vận thăng, hỗ trợ hấp thụ rung động và giảm chấn động trong quá trình nâng hạ.",
+    "Giảm chấn MT7 dùng cho vận thăng, hỗ trợ hấp thụ rung động và giảm chấn động trong quá trình nâng hạ.",
 
   description:
-    "Giảm chấn M7 là phụ tùng sử dụng trong hệ thống vận thăng, hỗ trợ hấp thụ rung động và giảm tác động của chấn động lên cơ cấu trong quá trình nâng hạ. Sản phẩm phục vụ nhu cầu thay thế và bảo trì các bộ phận giảm chấn của vận thăng, góp phần hỗ trợ thiết bị vận hành ổn định. Khi lựa chọn cần kiểm tra model, kích thước và cấu hình thực tế của thiết bị.",
+    "Giảm chấn MT7 là phụ tùng sử dụng trong hệ thống vận thăng, hỗ trợ hấp thụ rung động và giảm tác động của chấn động lên cơ cấu trong quá trình nâng hạ. Sản phẩm phục vụ nhu cầu thay thế và bảo trì các bộ phận giảm chấn của vận thăng, góp phần hỗ trợ thiết bị vận hành ổn định. Khi lựa chọn cần kiểm tra model, kích thước và cấu hình thực tế của thiết bị.",
 
   price: "Liên hệ báo giá",
 
   image: img("giam-chan-m7"),
 
-  alt: "Giảm chấn M7 dùng cho vận thăng",
+  alt: "Giảm chấn MT7 dùng cho vận thăng",
 
   featured: true,
 
@@ -1774,7 +1774,7 @@ export const products: Product[] = [
     },
     {
       label: "Mã / mẫu",
-      value: "M7",
+      value: "MT7",
     },
     {
       label: "Ứng dụng",
@@ -1800,21 +1800,21 @@ export const products: Product[] = [
 },
 
 {
-  slug: "giam-chan-m8",
-  name: "Giảm chấn M8",
+  slug: "giam-chan-mt8",
+  name: "Giảm chấn MT8",
   category: "Phụ tùng vận thăng",
 
   shortDesc:
-    "Giảm chấn M8 dùng cho vận thăng, hỗ trợ hấp thụ rung động, giảm chấn động và ổn định cơ cấu trong quá trình vận hành.",
+    "Giảm chấn MT8 dùng cho vận thăng, hỗ trợ hấp thụ rung động, giảm chấn động và ổn định cơ cấu trong quá trình vận hành.",
 
   description:
-    "Giảm chấn M8 là phụ tùng thuộc hệ thống vận thăng, được sử dụng để hỗ trợ hấp thụ rung động và giảm tác động của chấn động trong quá trình thiết bị hoạt động. Sản phẩm phù hợp cho nhu cầu thay thế, bảo trì và sửa chữa các bộ phận giảm chấn trên vận thăng. Để đảm bảo khả năng lắp đặt phù hợp, cần đối chiếu model, kích thước và cấu hình thực tế của thiết bị trước khi thay thế.",
+    "Giảm chấn MT8 là phụ tùng thuộc hệ thống vận thăng, được sử dụng để hỗ trợ hấp thụ rung động và giảm tác động của chấn động trong quá trình thiết bị hoạt động. Sản phẩm phù hợp cho nhu cầu thay thế, bảo trì và sửa chữa các bộ phận giảm chấn trên vận thăng. Để đảm bảo khả năng lắp đặt phù hợp, cần đối chiếu model, kích thước và cấu hình thực tế của thiết bị trước khi thay thế.",
 
   price: "Liên hệ báo giá",
 
   image: img("giam-chan-m8"),
 
-  alt: "Giảm chấn M8 dùng cho vận thăng",
+  alt: "Giảm chấn MT8 dùng cho vận thăng",
 
   featured: true,
 
@@ -1825,7 +1825,7 @@ export const products: Product[] = [
     },
     {
       label: "Mã / mẫu",
-      value: "M8",
+      value: "MT8",
     },
     {
       label: "Ứng dụng",
@@ -2016,15 +2016,15 @@ export const products: Product[] = [
 },
 
 {
-  slug: "ac-than-cau",
-  name: "Ắc thân cẩu",
+  slug: "bulong-than-cau",
+  name: "Bulông thân cẩu",
   category: "Phụ tùng cẩu tháp",
 
   shortDesc:
-    "Ắc thân cẩu là chi tiết liên kết cơ khí dùng để cố định và kết nối các bộ phận trong kết cấu thân cẩu tháp, phù hợp cho nhu cầu thay thế và bảo trì.",
+    "Bulông thân cẩu là chi tiết liên kết cơ khí dùng để cố định và kết nối các bộ phận trong kết cấu thân cẩu tháp, phù hợp cho nhu cầu thay thế và bảo trì.",
 
   description:
-    "Ắc thân cẩu là phụ tùng cơ khí được sử dụng tại các vị trí liên kết trong kết cấu thân cẩu tháp. Sản phẩm có vai trò kết nối, cố định và duy trì sự ổn định của các bộ phận trong quá trình lắp dựng và vận hành thiết bị. Ắc được cung cấp phục vụ nhu cầu thay thế, sửa chữa và bảo trì cẩu tháp. Khi lựa chọn cần đối chiếu mẫu, kích thước, vị trí lắp đặt và cấu hình thực tế của cẩu để đảm bảo phù hợp.",
+    "Bulông thân cẩu là phụ tùng cơ khí được sử dụng tại các vị trí liên kết trong kết cấu thân cẩu tháp. Sản phẩm có vai trò kết nối, cố định và duy trì sự ổn định của các bộ phận trong quá trình lắp dựng và vận hành thiết bị. Bulông được cung cấp phục vụ nhu cầu thay thế, sửa chữa và bảo trì cẩu tháp. Khi lựa chọn cần đối chiếu mẫu, kích thước, vị trí lắp đặt và cấu hình thực tế của cẩu để đảm bảo phù hợp.",
 
   price: "Liên hệ báo giá",
 
@@ -2044,7 +2044,7 @@ export const products: Product[] = [
   specs: [
     {
       label: "Loại sản phẩm",
-      value: "Ắc thân cẩu",
+      value: "Bulông thân cẩu",
     },
     {
       label: "Ứng dụng",
