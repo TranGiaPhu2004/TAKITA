@@ -19,6 +19,11 @@ export const siteConfig = {
   phoneE164: "+8446867978",
   hotlineKyThuat: "0946 867 978",
   email: "trangiaphuc0502@gmail.com",
+  social: {
+    tiktok: "https://www.tiktok.com/@takitasg",
+    facebook: "https://www.facebook.com/PhuTungThietBiNang",
+    youtube: "https://www.youtube.com/@TAKITAVN",
+  },
   address: {
     street: "101 Đường số 2, Khu đô thị Vạn Phúc, P. Hiệp Bình Phước",
     district: "Thủ Đức",

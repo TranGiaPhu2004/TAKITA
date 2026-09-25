@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import SocialLinks from "./SocialLinks";
 import { products } from "@/data/products";
 import { siteConfig } from "@/lib/seo";
 
@@ -40,6 +41,9 @@ export default function Footer() {
             <li>
               {siteConfig.address.street},<br />
               {siteConfig.address.district}, {siteConfig.address.city}
+            </li>
+            <li className="pt-1">
+              <SocialLinks />
             </li>
           </FooterCol>
         </div>

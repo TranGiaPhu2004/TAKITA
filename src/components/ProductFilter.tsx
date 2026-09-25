@@ -15,7 +15,14 @@ export default function ProductFilter({ products }: { products: Product[] }) {
   const [active, setActive] = useState<string>(ALL);
 
   const list = useMemo(
-    () => (active === ALL ? products : products.filter((p) => p.category === active)),
+    () =>
+      active === ALL
+        ? products
+        : products.filter(
+            (p) =>
+              (p.tags ?? [p.category]).includes(active as (typeof categories)[number]) ||
+              p.category === active,
+          ),
     [active, products],
   );
 

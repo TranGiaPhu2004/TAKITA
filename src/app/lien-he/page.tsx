@@ -3,6 +3,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ContactForm from "@/components/ContactForm";
 import SectionHeading from "@/components/SectionHeading";
 import JsonLd from "@/components/JsonLd";
+import SocialLinks from "@/components/SocialLinks";
 import { siteConfig, absoluteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -59,6 +60,12 @@ export default function ContactPage() {
                   <dd className="text-[0.95rem]">{v}</dd>
                 </div>
               ))}
+              <div className="py-3.5">
+                <dt className="text-[0.8rem] text-ink-3">Mạng xã hội</dt>
+                <dd className="mt-2">
+                  <SocialLinks prominent />
+                </dd>
+              </div>
             </dl>
           </div>
         </div>

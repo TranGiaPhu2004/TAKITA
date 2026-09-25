@@ -11,6 +11,7 @@ const navItems = [
   { href: "/", label: "Trang chủ" },
   { href: "/san-pham", label: "Sản phẩm" },
   { href: "/gioi-thieu", label: "Giới thiệu" },
+  { href: "/gioi-thieu-cong-ty", label: "Giới thiệu công ty" },
   { href: "/lien-he", label: "Liên hệ" },
 ];
 
@@ -19,7 +20,9 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   const isActive = (href: string) =>
-    href === "/" ? pathname === "/" : pathname.startsWith(href);
+    href === "/"
+      ? pathname === "/"
+      : pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-surface/90 backdrop-blur-md">
