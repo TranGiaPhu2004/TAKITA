@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Giới thiệu TAKITA | Thiết bị nâng và thiết bị xây dựng",
   description:
-    "Giới thiệu Công ty TNHH TM DV Thiết bị Xây Dựng Tân Kiến Tạo (TAKITA) – đơn vị cung cấp, lắp đặt, cho thuê, bảo trì và sửa chữa cẩu tháp, vận thăng và cần phân phối bê tông.",
+    "Giới thiệu CÔNG TY TNHH THIẾT BỊ NÂNG TAKITA – đơn vị cung cấp, lắp đặt, cho thuê, bảo trì và sửa chữa cẩu tháp, vận thăng và cần phân phối bê tông.",
   alternates: {
     canonical: "/gioi-thieu",
   },
@@ -70,7 +70,7 @@ export default function AboutPage() {
         {/* Hero / Introduction */}
         <SectionHeading
           eyebrow="Về TAKITA"
-          title="Công ty TNHH TM DV Thiết bị Xây Dựng Tân Kiến Tạo"
+          title="CÔNG TY TNHH THIẾT BỊ NÂNG TAKITA"
           desc="TAKITA hoạt động trong lĩnh vực thiết bị nâng hạ và thiết bị xây dựng, tập trung vào cẩu tháp, vận thăng và cần phân phối bê tông, cùng các dịch vụ lắp đặt, cho thuê, bảo trì, sửa chữa và cung cấp linh kiện."
         />
 
@@ -82,8 +82,7 @@ export default function AboutPage() {
 
           <div className="mt-5 space-y-4 text-[0.98rem] leading-7 text-ink-2">
             <p>
-              Thương hiệu Tân Kiến Tạo được hình thành từ năm 2012 và Công ty
-              TNHH TM DV Thiết bị Xây Dựng Tân Kiến Tạo được thành lập ngày
+              Thương hiệu TAKITA được hình thành từ năm 2012 và Công ty tnhh thiết bị nâng TAKITA được thành lập ngày
               29/11/2013 với định hướng cung cấp các sản phẩm, dịch vụ và giải
               pháp phục vụ ngành xây dựng.
             </p>
