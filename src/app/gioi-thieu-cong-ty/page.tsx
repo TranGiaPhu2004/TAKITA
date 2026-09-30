@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBand from "@/components/CtaBand";
 
@@ -49,32 +50,33 @@ export default function CompanyIntroductionPage() {
           ]}
         />
 
-        <header className="max-w-[760px] pb-9 pt-5">
+        <header className="max-w-[800px] pb-7 pt-3">
           <span className="eyebrow mb-3.5">Về TAKITA</span>
-          <h1 className="text-[2.25rem] font-extrabold leading-tight sm:text-[2.8rem]">
-            Vững bước vươn xa
+          <h1 className="text-[2rem] font-extrabold leading-tight sm:text-[2.5rem]">
+            Giới thiệu công ty TAKITA
           </h1>
           <p className="mt-4 max-w-[62ch] text-[1.05rem] leading-7 text-ink-2">
-            TAKITA đồng hành cùng ngành xây dựng bằng thiết bị nâng chất lượng, giải pháp thi công hiệu quả và tinh thần hợp tác lâu dài.
+            Tầm nhìn, sứ mệnh và những nguyên tắc định hình cách TAKITA phục vụ khách hàng, đối tác và ngành xây dựng.
           </p>
+          <Link href="/gioi-thieu" className="mt-5 inline-flex font-semibold text-brass hover:underline">
+            Xem năng lực và dịch vụ <span aria-hidden="true" className="ml-2">→</span>
+          </Link>
         </header>
 
-        <section className="border-y border-line py-9 md:grid md:grid-cols-[0.7fr_1.3fr] md:gap-12">
-          <div>
-            <p className="text-[0.72rem] font-bold uppercase tracking-[0.12em] text-brass">Tầm nhìn · Vision</p>
-            <h2 className="mt-2 text-[1.55rem] font-extrabold">Tiên phong trong thiết bị nâng</h2>
-          </div>
-          <p className="mt-4 text-[1rem] leading-7 text-ink-2 md:mt-0">
+
+
+        <section className="border-b border-line py-7">
+          <p className="text-[0.72rem] font-bold uppercase tracking-[0.12em] text-brass">01 / Tầm nhìn · Vision</p>
+          <h2 className="mt-2 text-[1.4rem] font-bold">Tiên phong trong thiết bị nâng</h2>
+          <p className="mt-3 max-w-[780px] text-[0.96rem] leading-7 text-ink-2">
             Trở thành đơn vị hàng đầu tại Việt Nam trong lĩnh vực thiết bị nâng và giải pháp thi công công trình, tiên phong về chất lượng, dịch vụ và uy tín, đồng hành cùng sự phát triển bền vững của ngành xây dựng.
           </p>
         </section>
 
-        <section className="grid gap-8 border-b border-line py-9 md:grid-cols-[0.7fr_1.3fr] md:gap-12">
-          <div>
-            <p className="text-[0.72rem] font-bold uppercase tracking-[0.12em] text-brass">Sứ mệnh · Mission</p>
-            <h2 className="mt-2 text-[1.55rem] font-extrabold">Tạo giá trị trên mỗi công trình</h2>
-          </div>
-          <ul className="space-y-3 text-[0.98rem] leading-7 text-ink-2">
+        <section className="border-b border-line py-7">
+          <p className="text-[0.72rem] font-bold uppercase tracking-[0.12em] text-brass">02 / Sứ mệnh · Mission</p>
+          <h2 className="mt-2 text-[1.4rem] font-bold">Tạo giá trị trên mỗi công trình</h2>
+          <ul className="mt-3 max-w-[780px] list-disc space-y-2 pl-5 text-[0.96rem] leading-7 text-ink-2">
             <li>Cung cấp thiết bị nâng chất lượng cao, an toàn, hiệu quả cho các công trình.</li>
             <li>Mang đến giải pháp thi công tối ưu, giúp khách hàng tiết kiệm chi phí và nâng cao năng suất.</li>
             <li>Xây dựng đội ngũ kỹ sư chuyên nghiệp, kỷ luật và thực chiến.</li>
@@ -82,16 +84,13 @@ export default function CompanyIntroductionPage() {
           </ul>
         </section>
 
-        <section className="py-10">
-          <div className="mb-6 max-w-[620px]">
-            <p className="text-[0.72rem] font-bold uppercase tracking-[0.12em] text-brass">Core values</p>
-            <h2 className="mt-2 text-[1.7rem] font-extrabold">Giá trị cốt lõi</h2>
-            <p className="mt-2 text-ink-2">Những nguyên tắc định hình cách TAKITA làm việc và phát triển.</p>
-          </div>
-          <ol className="grid gap-x-10 md:grid-cols-2">
+        <section className="border-b border-line py-7">
+          <p className="text-[0.72rem] font-bold uppercase tracking-[0.12em] text-brass">03 / Giá trị cốt lõi · Core values</p>
+          <h2 className="mt-2 text-[1.4rem] font-bold">Những nguyên tắc định hình cách TAKITA làm việc</h2>
+          <ol className="mt-4 space-y-5">
             {values.map((value, index) => (
-              <li key={value.title} className="flex gap-4 border-t border-line py-5">
-                <span className="pt-0.5 text-[0.8rem] font-bold text-brass">0{index + 1}</span>
+              <li key={value.title} className="flex gap-4">
+                <span className="w-7 shrink-0 pt-0.5 text-[0.8rem] font-bold text-brass">0{index + 1}</span>
                 <div>
                   <h3 className="font-bold">{value.title}</h3>
                   <p className="mt-1.5 text-[0.92rem] leading-6 text-ink-2">{value.description}</p>
@@ -101,9 +100,11 @@ export default function CompanyIntroductionPage() {
           </ol>
         </section>
 
-        <section className="bg-steel px-6 py-8 text-center text-white sm:px-10">
-          <p className="text-[0.72rem] font-bold uppercase tracking-[0.12em] text-brass-soft">Thông điệp định vị · Slogan</p>
-          <p className="mt-3 text-[1.55rem] font-extrabold sm:text-[1.9rem]">“TAKITA – Vững bước vươn xa”</p>
+
+
+        <section className="py-7">
+          <p className="text-[0.72rem] font-bold uppercase tracking-[0.12em] text-brass">Thông điệp định vị · Slogan</p>
+          <p className="mt-2 text-[1.35rem] font-extrabold">“TAKITA – Vững bước vươn xa”</p>
         </section>
       </div>
 
