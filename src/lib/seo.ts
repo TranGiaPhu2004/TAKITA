@@ -31,6 +31,8 @@ export const siteConfig = {
     district: "Thủ Đức",
     city: "TP. Hồ Chí Minh",
     country: "VN",
+    googleMapsUrl:
+      "https://www.google.com/maps/place/101+%C4%90%C6%B0%E1%BB%9Dng+2,+Khu+%C4%91%C3%B4+Th%E1%BB%8B+V%E1%BA%A1n+Ph%C3%BAc,+Hi%E1%BB%87p+B%C3%ACnh,+H%E1%BB%93+Ch%C3%AD+Minh+71300,+Vietnam/@10.8436087,106.7079817,17z/data=!3m1!4b1!4m6!3m5!1s0x3175286ff227bb3d:0xa63cfb9f14259afc!8m2!3d10.8436087!4d106.7105566!16s%2Fg%2F11q8g3kq15?entry=ttu&g_ep=EgoyMDI2MDkyNy4xIKXMDSoASAFQAw%3D%3D",
   },
   openingHours: "Mo-Sa 07:00-17:00",
   taxCode: "0318661516",

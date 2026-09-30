@@ -39,8 +39,15 @@ export default function Footer() {
             <li>{siteConfig.phone}</li>
             <li>{siteConfig.email}</li>
             <li>
-              {siteConfig.address.street},<br />
-              {siteConfig.address.district}, {siteConfig.address.city}
+              <a
+                href={siteConfig.address.googleMapsUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-brass"
+              >
+                {siteConfig.address.street},<br />
+                {siteConfig.address.district}, {siteConfig.address.city}
+              </a>
             </li>
             <li className="pt-1">
               <SocialLinks />

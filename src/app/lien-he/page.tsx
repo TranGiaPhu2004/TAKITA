@@ -16,7 +16,6 @@ const info: [string, string][] = [
   ["Hotline kinh doanh", siteConfig.phone],
   ["Hotline kỹ thuật", siteConfig.hotlineKyThuat],
   ["Email", siteConfig.email],
-  ["Địa chỉ", `${siteConfig.address.street}, ${siteConfig.address.district}, ${siteConfig.address.city}`],
   ["Giờ làm việc", "Thứ 2 – Thứ 7, 08:00 – 17:30"],
 ];
 
@@ -60,6 +59,19 @@ export default function ContactPage() {
                   <dd className="text-[0.95rem]">{v}</dd>
                 </div>
               ))}
+              <div className="border-b border-line py-3.5">
+                <dt className="text-[0.8rem] text-ink-3">Địa chỉ</dt>
+                <dd className="text-[0.95rem]">
+                  <a
+                    href={siteConfig.address.googleMapsUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline decoration-brass/50 underline-offset-4 hover:text-brass"
+                  >
+                    {siteConfig.address.street}, {siteConfig.address.district}, {siteConfig.address.city}
+                  </a>
+                </dd>
+              </div>
               <div className="py-3.5">
                 <dt className="text-[0.8rem] text-ink-3">Mạng xã hội</dt>
                 <dd className="mt-2">
