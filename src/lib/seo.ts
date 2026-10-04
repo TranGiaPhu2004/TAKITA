@@ -42,5 +42,8 @@ export const siteConfig = {
 } as const;
 
 /** Ghép URL tuyệt đối — bắt buộc cho canonical, OG image và JSON-LD */
-export const absoluteUrl = (path = "/") =>
-  `${siteConfig.url}${path.startsWith("/") ? path : `/${path}`}`;
+export const absoluteUrl = (path = "/") => {
+  const baseUrl = siteConfig.url.replace(/\/+$/, "");
+  const normalizedPath = path.replace(/^\/+/, "");
+  return normalizedPath ? `${baseUrl}/${normalizedPath}` : `${baseUrl}/`;
+};
