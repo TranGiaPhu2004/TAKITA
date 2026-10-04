@@ -9,13 +9,7 @@ export const siteConfig = {
   description:
     "Chuyên cung cấp, lắp đặt *cẩu tháp*, *vận thăng*, *cần cẩu CPB* và *phụ tùng chính hãng*.",
   // Vercel tự set biến này khi deploy; khi có domain riêng hãy đặt NEXT_PUBLIC_SITE_URL
-  url:
-    process.env.NEXT_PUBLIC_SITE_URL ??
-    (process.env.VERCEL_ENV === "production"
-      ? "https://takita.vn"
-      : process.env.VERCEL_URL
-        ? `https://${process.env.VERCEL_URL}`
-        : "http://localhost:3000"),
+  url: "https://takita.vn",
   locale: "vi_VN",
   phone: "0946 867 978",
   phoneE164: "+8446867978",
