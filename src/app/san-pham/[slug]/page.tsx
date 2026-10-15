@@ -65,13 +65,6 @@ export default async function ProductDetailPage({ params }: Props) {
       name: s.label,
       value: s.value,
     })),
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "VND",
-      availability: "https://schema.org/InStock",
-      url: absoluteUrl(`/san-pham/${product.slug}`),
-      seller: { "@type": "Organization", name: siteConfig.name },
-    },
   };
 
   return (
