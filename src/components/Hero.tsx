@@ -92,7 +92,7 @@ export default function Hero() {
           />
 
           <Image
-            src="/images/products/takita.webp"
+            src="/images/products/logov2.png"
             alt="TAKITA - Thiết bị nâng hạ và thiết bị xây dựng"
             fill
             sizes="(max-width: 1024px) 100vw, 520px"
