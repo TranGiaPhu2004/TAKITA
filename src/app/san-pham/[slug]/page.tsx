@@ -5,7 +5,6 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ProductGallery from "@/components/ProductGallery";
 import ProductCard from "@/components/ProductCard";
 import SpecTable from "@/components/SpecTable";
-import JsonLd from "@/components/JsonLd";
 import {
   getAllSlugs,
   getProductBySlug,
@@ -52,24 +51,8 @@ export default async function ProductDetailPage({ params }: Props) {
     ...(product.gallery ?? []),
   ];
 
-  const productLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.name,
-    image: [absoluteUrl(product.image)],
-    description: product.shortDesc,
-    category: product.category,
-    brand: { "@type": "Brand", name: siteConfig.name },
-    additionalProperty: product.specs.map((s) => ({
-      "@type": "PropertyValue",
-      name: s.label,
-      value: s.value,
-    })),
-  };
-
   return (
     <>
-      <JsonLd data={productLd} />
       <div className="container-site pb-16">
         <Breadcrumbs
           items={[
