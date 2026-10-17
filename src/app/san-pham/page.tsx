@@ -5,14 +5,15 @@ import SectionHeading from "@/components/SectionHeading";
 import JsonLd from "@/components/JsonLd";
 import { products, categories } from "@/data/products";
 import { absoluteUrl } from "@/lib/seo";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Vật tư cẩu tháp, vận thăng và xây dựng",
+  title: "Pulley cẩu tháp, phụ tùng vận thăng và thiết bị xây dựng",
   description:
-    "Danh mục vật tư TAKITA gồm phụ tùng cẩu tháp, bánh nhông vận thăng, thiết bị điều khiển và thiết bị xây dựng. Tư vấn kỹ thuật, giao toàn quốc.",
+    "Tham khảo pulley cẩu tháp MC nylon, pulley moment, phụ tùng cẩu tháp, bánh nhông vận thăng và thiết bị xây dựng tại TAKITA. Tư vấn theo mẫu, giao toàn quốc.",
   alternates: { canonical: "/san-pham" },
   openGraph: {
-    title: "Vật tư cẩu tháp, vận thăng và xây dựng",
+    title: "Pulley cẩu tháp, phụ tùng vận thăng và thiết bị xây dựng",
     url: absoluteUrl("/san-pham"),
   },
 };
@@ -21,7 +22,7 @@ export default function ProductsPage() {
   const itemListLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Vật tư cẩu tháp, vận thăng và xây dựng",
+    name: "Pulley cẩu tháp, phụ tùng vận thăng và thiết bị xây dựng",
     numberOfItems: products.length,
     itemListElement: products.map((p, i) => ({
       "@type": "ListItem",
@@ -43,6 +44,22 @@ export default function ProductsPage() {
         <div className="pb-16">
           <ProductFilter products={products} />
         </div>
+        <section className="mb-16 rounded-2xl border border-line bg-surface p-6 sm:p-8">
+          <h2 className="text-2xl font-extrabold">Pulley cẩu tháp và phụ tùng thay thế</h2>
+          <p className="mt-3 max-w-3xl text-ink-2">
+            TAKITA cung cấp pulley cẩu tháp MC nylon 350 × 90 mm và pulley
+            moment cẩu tháp theo mẫu thiết bị. Khi tìm puly thay thế, hãy đối
+            chiếu vị trí lắp, kích thước, vật liệu và model cẩu để xác nhận
+            đúng chủng loại trước khi đặt hàng.
+          </p>
+          <p className="mt-3 max-w-3xl text-ink-2">
+            Xem thêm hướng dẫn{" "}
+            <Link href="/pulley-cau-thap" className="font-semibold text-accent underline">
+              chọn pulley cẩu tháp và puly thay thế
+            </Link>
+            , hoặc liên hệ TAKITA để được tư vấn theo thông số thực tế.
+          </p>
+        </section>
       </div>
     </>
   );
