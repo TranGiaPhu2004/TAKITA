@@ -121,6 +121,75 @@ export const products: Product[] = [
     ],
   },
 
+{
+  slug: "bo-phong-roi-van-thang-alimak-sc65-35-sweden",
+  name: "Bộ phòng rơi vận thăng Alimak SC65/35 Sweden",
+  category: "Phụ tùng vận thăng",
+
+  shortDesc:
+    "Bộ phòng rơi vận thăng Alimak Sweden, mã tham chiếu ghi trên tem 0196784-258, tốc độ ghi trên tem 1,30 m/s và khối lượng tối đa ghi trên tem 4.350 kg. Cần đối chiếu thông số thực tế trước khi thay thế.",
+
+  description:
+    "Bộ phòng rơi vận thăng Alimak SC65/35 Sweden là cụm thiết bị an toàn dùng trong hệ thống vận thăng, phục vụ nhu cầu thay thế, kiểm tra và bảo trì thiết bị. Trên tem nhận dạng có ghi thương hiệu ALIMAK SWEDEN, mã tham chiếu 0196784-258, tốc độ 1,30 m/s và khối lượng tối đa 4.350 kg (tương đương khoảng 9.600 lb). Do tem đã bị trầy xước, một số nội dung chưa thể đọc chính xác. Khi lựa chọn sản phẩm thay thế, cần kiểm tra mã phụ tùng, model vận thăng, thông số kỹ thuật và tài liệu của nhà sản xuất để xác nhận khả năng tương thích. Việc kiểm tra, lắp đặt và thử nghiệm bộ phòng rơi cần được thực hiện bởi nhân sự kỹ thuật có chuyên môn theo hướng dẫn của nhà sản xuất.",
+
+  price: "Liên hệ báo giá",
+
+  image: "/images/products/bo_phong_roi_van_thang3.webp",
+
+  alt: "Bộ phòng rơi vận thăng Alimak SC65/35 Sweden",
+
+  gallery: [
+    {
+      src: "/images/products/bo_phong_roi_van_thang4.webp",
+      alt: "Cụm bánh răng bộ phòng rơi vận thăng Alimak SC65/35 Sweden",
+    },
+  ],
+
+  specs: [
+    {
+      label: "Loại sản phẩm",
+      value: "Bộ phòng rơi vận thăng",
+    },
+    {
+      label: "Thương hiệu",
+      value: "Alimak Sweden",
+    },
+    {
+      label: "Model thiết bị",
+      value: "SC65/35 (cần xác nhận theo hồ sơ thiết bị)",
+    },
+    {
+      label: "Mã tham chiếu trên tem",
+      value: "0196784-258 (cần kiểm tra lại)",
+    },
+    {
+      label: "Tốc độ ghi trên tem",
+      value: "1,30 m/s (cần xác minh loại tốc độ)",
+    },
+    {
+      label: "Khối lượng tối đa ghi trên tem",
+      value: "4.350 kg / 9.600 lb (cần xác minh phạm vi áp dụng)",
+    },
+    {
+      label: "Thông số giới hạn ghi trên tem",
+      value: "8 mm (cần đối chiếu tài liệu kỹ thuật)",
+    },
+    {
+      label: "Ứng dụng",
+      value: "Hệ thống vận thăng Alimak",
+    },
+    {
+      label: "Mục đích sử dụng",
+      value: "Thay thế, kiểm tra và bảo trì thiết bị",
+    },
+    {
+      label: "Lưu ý tương thích",
+      value:
+        "Đối chiếu mã phụ tùng, model và thông số thực tế của thiết bị",
+    },
+  ],
+},
+
   {
     slug: "cum-thang-xoay",
     name: "Cụm thắng xoay vận thăng",
