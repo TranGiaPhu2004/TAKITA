@@ -156,23 +156,23 @@ export const products: Product[] = [
     },
     {
       label: "Model thiết bị",
-      value: "SC65/35 (cần xác nhận theo hồ sơ thiết bị)",
+      value: "SC65/35",
     },
     {
       label: "Mã tham chiếu trên tem",
-      value: "0196784-258 (cần kiểm tra lại)",
+      value: "0196784-258 ",
     },
     {
       label: "Tốc độ ghi trên tem",
-      value: "1,30 m/s (cần xác minh loại tốc độ)",
+      value: "1,30 m/s",
     },
     {
       label: "Khối lượng tối đa ghi trên tem",
-      value: "4.350 kg / 9.600 lb (cần xác minh phạm vi áp dụng)",
+      value: "4.350 kg / 9.600 lb",
     },
     {
       label: "Thông số giới hạn ghi trên tem",
-      value: "8 mm (cần đối chiếu tài liệu kỹ thuật)",
+      value: "8 mm",
     },
     {
       label: "Ứng dụng",
