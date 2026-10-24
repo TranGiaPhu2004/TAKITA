@@ -155,7 +155,7 @@ export default function AboutPage() {
         </section>
 
         <nav aria-label="Thông tin công ty" className="flex flex-wrap gap-x-6 gap-y-3 py-7 text-[0.94rem] font-semibold">
-          <Link href="/gioi-thieu-cong-ty" className="text-brass hover:underline">Tầm nhìn, sứ mệnh và giá trị cốt lõi</Link>
+          <Link href="/dich-vu" className="text-brass hover:underline">Xem dịch vụ của TAKITA</Link>
           <Link href="/lien-he" className="text-brass hover:underline">Thông tin liên hệ</Link>
         </nav>
       </div>
@@ -164,4 +164,3 @@ export default function AboutPage() {
     </>
   );
 }
-

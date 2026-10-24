@@ -445,6 +445,47 @@ export const products: Product[] = [
   },
 
   {
+    slug: "pulley-dan-cap-cau-490x110",
+    name: "Pulley dẫn cáp cẩu 490×110 bạc đạn 6210",
+    category: "Phụ tùng cẩu tháp",
+
+    shortDesc:
+      "Pulley dẫn cáp cẩu kích thước 490×110 mm, vật liệu MC Nylon cao cấp, sử dụng bạc đạn 6210.",
+
+    description:
+      "Pulley dẫn cáp cẩu 490×110 mm được chế tạo từ MC Nylon cao cấp và sử dụng bạc đạn 6210. Sản phẩm phục vụ nhu cầu dẫn hướng cáp cẩu tháp, thay thế và bảo trì thiết bị. Vui lòng đối chiếu kích thước, bạc đạn và cấu hình thực tế trước khi đặt hàng.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("pulley_dan_cap_cau"),
+
+    alt: "Pulley dẫn cáp cẩu 490x110 mm MC Nylon, bạc đạn 6210",
+
+    specs: [
+      {
+        label: "Kích thước",
+        value: "490 × 110 mm",
+      },
+      {
+        label: "Vật liệu",
+        value: "MC Nylon cao cấp",
+      },
+      {
+        label: "Bạc đạn",
+        value: "6210",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Dẫn cáp cẩu tháp",
+      },
+      {
+        label: "Tương thích",
+        value: "Đối chiếu theo mẫu và cấu hình thiết bị",
+      },
+    ],
+  },
+
+  {
     slug: "pulley-moment",
     name: "Pulley moment cẩu tháp",
     category: "Phụ tùng cẩu tháp",

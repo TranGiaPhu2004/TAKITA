@@ -11,7 +11,7 @@ const navItems = [
   { href: "/", label: "Trang chủ" },
   { href: "/san-pham", label: "Sản phẩm" },
   { href: "/gioi-thieu", label: "Giới thiệu" },
-  { href: "/gioi-thieu-cong-ty", label: "Giới thiệu công ty" },
+  { href: "/dich-vu", label: "Dịch vụ" },
   { href: "/lien-he", label: "Liên hệ" },
 ];
 

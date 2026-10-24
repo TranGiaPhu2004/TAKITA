@@ -62,8 +62,9 @@ export default function TowerCranePulleyPage() {
             </p>
             <p className="mt-3">
               Danh mục TAKITA hiện có pulley cẩu tháp MC nylon kích thước
-              350 × 90 mm và pulley moment cẩu tháp. Thông số tương thích cần
-              được xác nhận theo mẫu và cấu hình thiết bị thực tế.
+              350 × 90 mm, pulley dẫn cáp cẩu 490 × 110 mm dùng bạc đạn 6210
+              và pulley moment cẩu tháp. Thông số tương thích cần được xác
+              nhận theo mẫu và cấu hình thiết bị thực tế.
             </p>
           </section>
 

@@ -11,8 +11,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl("/san-pham"), priority: 0.9, changeFrequency: "weekly" as const },
     { url: absoluteUrl("/pulley-cau-thap"), priority: 0.8, changeFrequency: "monthly" as const },
     { url: absoluteUrl("/gioi-thieu"), priority: 0.6, changeFrequency: "yearly" as const },
+    { url: absoluteUrl("/dich-vu"), priority: 0.7, changeFrequency: "yearly" as const },
     { url: absoluteUrl("/lien-he"), priority: 0.7, changeFrequency: "yearly" as const },
-    { url: absoluteUrl("/gioi-thieu-cong-ty"), priority: 0.6, changeFrequency: "yearly" as const },
   ];
 
   const productRoutes = products.map((p) => ({
