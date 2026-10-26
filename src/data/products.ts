@@ -486,6 +486,51 @@ export const products: Product[] = [
   },
 
   {
+    slug: "pulley-xep-cap-360x80-bac-thau",
+    name: "Pulley xếp cáp 360×80 bạc thau",
+    category: "Phụ tùng cẩu tháp",
+
+    shortDesc:
+      "Pulley xếp cáp có ký hiệu 360×80 trên thân và bạc thau tại lỗ tâm",
+
+    description:
+      "Pulley xếp cáp 360×80 bạc thau có ký hiệu kích thước 360×80 khắc nổi trên thân, bạc thau tại lỗ tâm, gờ bậc quanh lỗ tâm, các lỗ tròn bố trí xung quanh và rãnh dẫn cáp ở chu vi puly. Đối chiếu bản vẽ hoặc thông số kỹ thuật để xác nhận ý nghĩa kích thước 360×80, đơn vị đo, vật liệu thân và khả năng tương thích với thiết bị trước khi thay thế.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("pulley_xep_cap_bac_thau"),
+
+    alt: "Pulley xếp cáp ký hiệu 360×80, bạc thau tại lỗ tâm",
+
+    specs: [
+      {
+        label: "Ký hiệu kích thước",
+        value: "360×80",
+      },
+      {
+        label: "Bạc lót",
+        value: "Bạc thau tại lỗ tâm",
+      },
+      {
+        label: "Cấu tạo nhận diện",
+        value: "Gờ bậc quanh lỗ tâm và các lỗ tròn bố trí xung quanh",
+      },
+      {
+        label: "Rãnh",
+        value: "Rãnh dẫn cáp ở chu vi puly",
+      },
+      {
+        label: "Vật liệu thân",
+        value: "Cần xác nhận theo thông số kỹ thuật",
+      },
+      {
+        label: "Tương thích",
+        value: "Đối chiếu bản vẽ, kích thước và mẫu thiết bị thực tế",
+      },
+    ],
+  },
+
+  {
     slug: "pulley-moment",
     name: "Pulley moment cẩu tháp",
     category: "Phụ tùng cẩu tháp",
