@@ -9,8 +9,8 @@ import { siteConfig } from "@/lib/seo";
 
 const navItems = [
   { href: "/", label: "Trang chủ" },
-  { href: "/san-pham", label: "Sản phẩm" },
   { href: "/gioi-thieu", label: "Giới thiệu" },
+  { href: "/san-pham", label: "Sản phẩm" },
   { href: "/dich-vu", label: "Dịch vụ" },
   { href: "/lien-he", label: "Liên hệ" },
 ];

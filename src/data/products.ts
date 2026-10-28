@@ -402,6 +402,47 @@ export const products: Product[] = [
   },
 
   {
+    slug: "bulong-noi-than-cau-thap-m30x350-10-9",
+    name: "Bulong nối thân cẩu tháp M30×350-10.9",
+    category: "Phụ tùng cẩu tháp",
+
+    shortDesc:
+      "Bulong nối thân cẩu tháp quy cách M30 × 350, cấp bền 10.9, bằng thép cường độ cao.",
+
+    description:
+      "Bulong nối thân cẩu tháp M30 × 350 cấp bền 10.9, vật liệu thép cường độ cao. Sản phẩm dùng để liên kết thân cẩu tháp và kết cấu thiết bị nâng hạ. Vui lòng đối chiếu quy cách và yêu cầu kỹ thuật của thiết bị trước khi lắp đặt.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("bulong_noi_than_cau_thap_m30x350"),
+
+    alt: "Bulong nối thân cẩu tháp M30 x 350 cấp bền 10.9",
+
+    specs: [
+      {
+        label: "Tên sản phẩm",
+        value: "Bulong nối thân cẩu tháp",
+      },
+      {
+        label: "Quy cách",
+        value: "M30 × 350",
+      },
+      {
+        label: "Cấp bền",
+        value: "10.9",
+      },
+      {
+        label: "Vật liệu",
+        value: "Thép cường độ cao",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Liên kết thân cẩu tháp, kết cấu thiết bị nâng hạ",
+      },
+    ],
+  },
+
+  {
     slug: "pulley-cau-thap",
     name: "Pulley cẩu tháp MC nylon 350×90",
     category: "Phụ tùng cẩu tháp",
