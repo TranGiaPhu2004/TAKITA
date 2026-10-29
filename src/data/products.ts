@@ -1124,6 +1124,59 @@ export const products: Product[] = [
   },
 
   {
+    slug: "cap-dien-nguon-van-thang-3x25-2x10",
+    name: "Cáp điện nguồn vận thăng 3×25+2×10",
+    category: "Phụ tùng vận thăng",
+
+    shortDesc:
+      "Cáp điện nguồn vận thăng 3×25+2×10 mm², gồm dây nguồn 3 pha và dây điều khiển, lõi đồng nguyên chất, vỏ cao su bền bỉ.",
+
+    description:
+      "Cáp điện nguồn vận thăng 3×25+2×10 mm² dùng cho hệ thống vận thăng xây dựng. Cáp gồm 3 lõi 25 mm² làm dây nguồn 3 pha (L1, L2, L3) và 2 lõi 10 mm² làm dây điều khiển. Lõi đồng nguyên chất hỗ trợ dẫn điện tốt; vỏ cao su bền bỉ, chịu mài mòn và thời tiết. Sản phẩm nhập khẩu chính hãng, hỗ trợ hệ thống vận thăng vận hành an toàn và ổn định.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("cap_dien_nguon_van_thang"),
+
+    alt: "Cáp điện nguồn vận thăng 3 x 25 + 2 x 10 mm²",
+
+    specs: [
+      {
+        label: "Loại sản phẩm",
+        value: "Cáp điện nguồn vận thăng",
+      },
+      {
+        label: "Quy cách",
+        value: "3 × 25 + 2 × 10 mm²",
+      },
+      {
+        label: "Dây nguồn",
+        value: "3 × 25 mm², 3 pha (L1, L2, L3)",
+      },
+      {
+        label: "Dây điều khiển",
+        value: "2 × 10 mm²",
+      },
+      {
+        label: "Lõi dẫn điện",
+        value: "Đồng nguyên chất",
+      },
+      {
+        label: "Vỏ cáp",
+        value: "Cao su, chịu mài mòn và thời tiết",
+      },
+      {
+        label: "Xuất xứ",
+        value: "Nhập khẩu chính hãng",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Hệ thống vận thăng xây dựng",
+      },
+    ],
+  },
+
+  {
     slug: "khoi-tiep-diem-tre-thoi-gian-schneider-ladr2",
     name: "Tiếp điểm trễ Schneider LADR2 1–30 giây",
     category: "Phụ tùng vận thăng",
