@@ -565,6 +565,43 @@ export const products: Product[] = [
   },
 
   {
+    slug: "pulley-dan-cap-xe-cau-mc-nylon-410x125",
+    name: "Pulley dẫn cáp xe cẩu MC nylon cao cấp 410×125",
+    category: "Phụ tùng cẩu tháp",
+
+    shortDesc:
+      "Pulley dẫn cáp xe cẩu kích thước 410×125 mm, MC Nylon cao cấp, đúc nguyên khối; đối chiếu cấu hình thiết bị trước khi thay thế.",
+
+    description:
+      "Pulley dẫn cáp xe cẩu MC Nylon cao cấp 410×125 mm được đúc nguyên khối, có đặc tính chịu mài mòn tốt, độ bền cao và vận hành êm theo thông tin trên ảnh sản phẩm. Sản phẩm dùng để dẫn cáp cho xe cẩu và thiết bị nâng hạ. Vui lòng xác nhận kích thước lắp đặt và cấu hình puly với thiết bị thực tế trước khi đặt hàng.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("pulley_dan_cap_xe_cau"),
+
+    alt: "Pulley dẫn cáp xe cẩu MC Nylon cao cấp kích thước 410×125 mm",
+
+    specs: [
+      { label: "Loại sản phẩm", value: "Pulley dẫn cáp xe cẩu" },
+      { label: "Kích thước", value: "410 × 125 mm (theo bảng thông số trên ảnh)" },
+      { label: "Vật liệu", value: "MC Nylon cao cấp" },
+      { label: "Cấu tạo", value: "Đúc nguyên khối" },
+      {
+        label: "Đặc điểm",
+        value: "Chịu mài mòn tốt, độ bền cao, vận hành êm",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Dẫn cáp cho xe cẩu và thiết bị nâng hạ",
+      },
+      {
+        label: "Tương thích",
+        value: "Đối chiếu kích thước lắp đặt và cấu hình thiết bị thực tế",
+      },
+    ],
+  },
+
+  {
     slug: "pulley-xep-cap-360x80-bac-thau",
     name: "Pulley xếp cáp 360×80 bạc thau",
     category: "Phụ tùng cẩu tháp",
