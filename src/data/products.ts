@@ -443,6 +443,38 @@ export const products: Product[] = [
   },
 
   {
+    slug: "mam-xoay-cau-thap-ntp-7030-16-ton",
+    name: "Mâm xoay cẩu tháp NTP 7030-16 TON",
+    category: "Phụ tùng cẩu tháp",
+
+    shortDesc:
+      "Mâm xoay cẩu tháp model NTP 7030, tải trọng 16 tấn, thép chất lượng cao, nhập khẩu trực tiếp từ nhà máy.",
+
+    description:
+      "Mâm xoay cẩu tháp NTP 7030-16 TON là phụ tùng cho cẩu tháp và thiết bị nâng hạ. Theo thông tin trên ảnh sản phẩm, mâm có khả năng chịu tải 16 tấn, làm từ thép chất lượng cao, được gia công chính xác và nhập khẩu trực tiếp từ nhà máy. Vui lòng xác nhận model, thông số lắp đặt và yêu cầu kỹ thuật của thiết bị trước khi đặt hàng.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("mam_xoay_cau_thap_7030"),
+
+    alt: "Mâm xoay cẩu tháp NTP 7030 tải trọng 16 tấn",
+
+    specs: [
+      { label: "Tên sản phẩm", value: "Mâm xoay cẩu tháp" },
+      { label: "Model", value: "NTP 7030" },
+      { label: "Khả năng chịu tải", value: "16 tấn" },
+      { label: "Xuất xứ", value: "Nhập khẩu chính hãng, trực tiếp từ nhà máy" },
+      { label: "Vật liệu", value: "Thép chất lượng cao" },
+      { label: "Đặc điểm", value: "Gia công chính xác, độ bền cao, vận hành ổn định" },
+      { label: "Ứng dụng", value: "Cẩu tháp và thiết bị nâng hạ" },
+      {
+        label: "Tương thích",
+        value: "Đối chiếu model và thông số lắp đặt của thiết bị thực tế",
+      },
+    ],
+  },
+
+  {
     slug: "pulley-cau-thap",
     name: "Pulley cẩu tháp MC nylon 350×90",
     category: "Phụ tùng cẩu tháp",
