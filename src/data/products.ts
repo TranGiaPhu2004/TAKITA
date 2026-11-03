@@ -559,6 +559,36 @@ export const products: Product[] = [
   },
 
   {
+    slug: "pulley-dan-cap-mc-nylon-330x110",
+    name: "Pulley dẫn cáp MC nylon 330×110",
+    category: "Phụ tùng cẩu tháp",
+
+    shortDesc:
+      "Pulley dẫn cáp MC Nylon kích thước 330×110, có chất lượng bền bỉ, vận hành ổn định và ứng dụng rộng rãi.",
+
+    description:
+      "Pulley dẫn cáp MC Nylon 330×110 là puly dẫn cáp bằng vật liệu MC Nylon. Theo thông tin trên ảnh sản phẩm, puly có chất lượng bền bỉ, vận hành ổn định và ứng dụng rộng rãi. Vui lòng đối chiếu kích thước lắp đặt, cấu hình puly và yêu cầu kỹ thuật của thiết bị thực tế để xác nhận tương thích trước khi đặt hàng.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("pulley_dan_cap_330x110"),
+
+    alt: "Pulley dẫn cáp MC Nylon kích thước 330×110",
+
+    specs: [
+      { label: "Loại sản phẩm", value: "Pulley dẫn cáp" },
+      { label: "Kích thước", value: "330 × 110 (theo ký hiệu trên ảnh)" },
+      { label: "Vật liệu", value: "MC Nylon" },
+      { label: "Đặc điểm", value: "Chất lượng bền bỉ, vận hành ổn định" },
+      { label: "Ứng dụng", value: "Ứng dụng rộng rãi" },
+      {
+        label: "Tương thích",
+        value: "Đối chiếu kích thước lắp đặt và cấu hình thiết bị thực tế",
+      },
+    ],
+  },
+
+  {
     slug: "pulley-dan-cap-mc-nylon-500x130",
     name: "Pulley dẫn cáp MC nylon cao cấp 500×130",
     category: "Phụ tùng vận thăng",
