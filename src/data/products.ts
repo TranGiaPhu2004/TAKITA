@@ -191,6 +191,41 @@ export const products: Product[] = [
 },
 
   {
+    slug: "bo-phong-roi-van-thang-saj40-2-0-sribs",
+    name: "Bộ phòng rơi vận thăng SAJ40-2.0-SRIBS",
+    category: "Phụ tùng vận thăng",
+
+    shortDesc:
+      "Bộ phòng rơi vận thăng model SAJ40-2.0, tải hãm tối đa 40 kN, tốc độ kích hoạt 2,0 m/s.",
+
+    description:
+      "Bộ phòng rơi SAJ40-2.0-SRIBS là thiết bị an toàn dành cho vận thăng chở người và vật liệu. Theo bảng thông số của dòng SAJ40-2.0, thiết bị có tải hãm tối đa 40 kN, tốc độ kích hoạt 2,0 m/s và khối lượng 56 kg.Khi lựa chọn thay thế, cần đối chiếu model, thông số và yêu cầu tương thích của vận thăng. Việc kiểm tra, lắp đặt và thử nghiệm cần do nhân sự chuyên môn thực hiện theo tài liệu của nhà sản xuất và quy định an toàn hiện hành.",
+
+    price: "Liên hệ báo giá",
+
+    image: "/images/products/phong_roi_van_thang.jpg",
+
+    alt: "Bộ phòng rơi vận thăng SAJ40-2.0-SRIBS",
+
+    specs: [
+      { label: "Loại sản phẩm", value: "Bộ phòng rơi (Safety Device)" },
+      { label: "Model", value: "SAJ40-2.0-SRIBS" },
+      { label: "Tải hãm tối đa", value: "40 kN" },
+      { label: "Tốc độ kích hoạt", value: "2,0 m/s" },
+      { label: "Khối lượng", value: "56 kg" },
+      {
+        label: "Ứng dụng",
+        value: "Vận thăng chở người và vật liệu",
+      },
+      {
+        label: "Lưu ý an toàn",
+        value:
+          "Xác nhận tương thích; kiểm tra, lắp đặt và thử nghiệm theo hướng dẫn của nhà sản xuất bởi nhân sự chuyên môn",
+      },
+    ],
+  },
+
+  {
     slug: "cum-thang-xoay",
     name: "Cụm thắng xoay vận thăng",
     category: "Phụ tùng vận thăng",
