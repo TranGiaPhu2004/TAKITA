@@ -624,6 +624,44 @@ export const products: Product[] = [
   },
 
   {
+    slug: "pulley-dan-cap-mc-nylon-360x90",
+    name: "Pulley dẫn cáp MC nylon cao cấp 360×90",
+    category: "Phụ tùng vận thăng",
+    tags: ["Phụ tùng vận thăng", "Phụ tùng cẩu tháp"],
+
+    shortDesc:
+      "Pulley dẫn cáp MC Nylon cao cấp kích thước 360×90 mm, đúc nguyên khối, hỗ trợ dẫn cáp ổn định và vận hành êm.",
+
+    description:
+      "Pulley dẫn cáp MC Nylon cao cấp 360×90 mm được đúc nguyên khối, có độ bền cao và khả năng chịu mài mòn tốt theo thông tin trên ảnh sản phẩm. Thiết kế dùng để dẫn cáp ổn định, vận hành êm; phù hợp ứng dụng cho vận thăng, cẩu tháp và thiết bị nâng hạ. Vui lòng đối chiếu kích thước lắp đặt và cấu hình thiết bị thực tế để xác nhận tương thích trước khi đặt hàng.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("pulley_dan_cap_360x90"),
+
+    alt: "Pulley dẫn cáp MC Nylon cao cấp kích thước 360×90 mm",
+
+    specs: [
+      { label: "Loại sản phẩm", value: "Pulley dẫn cáp" },
+      { label: "Kích thước", value: "360 × 90 mm" },
+      { label: "Vật liệu", value: "MC Nylon cao cấp" },
+      { label: "Cấu tạo", value: "Đúc nguyên khối" },
+      {
+        label: "Đặc điểm",
+        value: "Độ bền cao, chịu mài mòn tốt, dẫn cáp ổn định, vận hành êm",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Dẫn cáp cho vận thăng, cẩu tháp và thiết bị nâng hạ",
+      },
+      {
+        label: "Tương thích",
+        value: "Đối chiếu kích thước lắp đặt và cấu hình thiết bị thực tế",
+      },
+    ],
+  },
+
+  {
     slug: "pulley-dan-cap-mc-nylon-500x130",
     name: "Pulley dẫn cáp MC nylon cao cấp 500×130",
     category: "Phụ tùng vận thăng",
