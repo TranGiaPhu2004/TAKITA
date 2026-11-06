@@ -510,6 +510,42 @@ export const products: Product[] = [
   },
 
   {
+    slug: "cuon-hut-thang-mam-xoay-cau-thap",
+    name: "Cuộn hút thắng mâm xoay cẩu tháp",
+    category: "Phụ tùng cẩu tháp",
+
+    shortDesc:
+      "Cuộn hút điện từ thuộc cụm thắng mâm xoay cẩu tháp, hỗ trợ đóng nhả phanh để kiểm soát chuyển động quay của thiết bị.",
+
+    description:
+      "Cuộn hút thắng là bộ phận điện từ trong cụm phanh mâm xoay cẩu tháp. Khi được cấp điện theo thiết kế của hệ thống, cuộn hút tạo lực điện từ để tác động cơ cấu phanh, hỗ trợ đóng hoặc nhả phanh và kiểm soát chuyển động quay của mâm xoay. Sản phẩm phù hợp cho nhu cầu kiểm tra, thay thế và bảo trì cụm thắng. Cần đối chiếu hình dạng, kích thước lắp đặt và thông số điện với cuộn hút đang sử dụng trước khi đặt hàng; việc kiểm tra và lắp đặt nên do kỹ thuật viên có chuyên môn thực hiện.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("cuon_hut_thang_mam_xoay_cau_thap"),
+
+    alt: "Cuộn hút thắng điện từ dùng cho mâm xoay cẩu tháp",
+
+    specs: [
+      { label: "Loại sản phẩm", value: "Cuộn hút thắng điện từ" },
+      { label: "Cụm sử dụng", value: "Thắng mâm xoay cẩu tháp" },
+      {
+        label: "Công dụng",
+        value: "Tác động cơ cấu phanh để hỗ trợ đóng nhả phanh mâm xoay",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Kiểm tra, thay thế và bảo trì hệ thống phanh cẩu tháp",
+      },
+      {
+        label: "Lưu ý tương thích",
+        value:
+          "Đối chiếu mẫu, kích thước lắp đặt và thông số điện của thiết bị thực tế",
+      },
+    ],
+  },
+
+  {
     slug: "pulley-cau-thap",
     name: "Pulley cẩu tháp MC nylon 350×90",
     category: "Phụ tùng cẩu tháp",
