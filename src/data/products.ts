@@ -1370,6 +1370,44 @@ export const products: Product[] = [
   },
 
   {
+    slug: "bien-tan-cau-thap-inovance",
+    name: "Biến tần cẩu tháp Inovance",
+    category: "Phụ tùng cẩu tháp",
+
+    shortDesc:
+      "Biến tần Inovance cho hệ thống cẩu tháp, điều khiển tốc độ động cơ và hỗ trợ vận hành êm hơn ở các chuyển động nâng hạ, xe con và quay toa.",
+
+    description:
+      "Biến tần Inovance là thiết bị điều khiển tốc độ động cơ bằng cách thay đổi tần số và điện áp cấp cho động cơ. Trong hệ thống cẩu tháp, biến tần có thể được ứng dụng cho các cơ cấu nâng hạ, di chuyển xe con và quay toa, hỗ trợ tăng tốc và giảm tốc theo điều khiển thay vì đóng/ngắt đột ngột. Việc chọn biến tần cần căn cứ vào công suất, dòng định mức và đặc tính động cơ, cơ cấu sử dụng, nguồn điện, hệ thống phanh và cấu hình điều khiển của cẩu. Hãy gửi model cẩu và thông tin trên nhãn động cơ để được tư vấn cấu hình phù hợp; ảnh minh họa không thể hiện đủ mã model và thông số định mức.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("bien_tan_cau_thap_innovance"),
+
+    alt: "Biến tần Inovance trong tủ điều khiển cẩu tháp",
+
+    specs: [
+      { label: "Thương hiệu", value: "Inovance" },
+      { label: "Loại thiết bị", value: "Biến tần điều khiển động cơ" },
+      { label: "Ứng dụng", value: "Hệ thống điều khiển cẩu tháp" },
+      {
+        label: "Cơ cấu có thể sử dụng",
+        value: "Nâng hạ, di chuyển xe con, quay toa (theo cấu hình cẩu)",
+      },
+      {
+        label: "Công dụng",
+        value:
+          "Điều khiển tốc độ động cơ, hỗ trợ tăng giảm tốc có kiểm soát",
+      },
+      {
+        label: "Lưu ý chọn thiết bị",
+        value:
+          "Xác nhận model, công suất và dòng động cơ, nguồn điện, hệ thống phanh và cấu hình điều khiển trước khi thay thế/lắp đặt",
+      },
+    ],
+  },
+
+  {
     slug: "cap-dien-nguon-van-thang-3x25-2x10",
     name: "Cáp điện nguồn vận thăng 3×25+2×10",
     category: "Phụ tùng vận thăng",
