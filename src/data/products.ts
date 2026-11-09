@@ -510,6 +510,44 @@ export const products: Product[] = [
   },
 
   {
+    slug: "mam-xoay-cau-thap-zoomlion-wa6015-8a",
+    name: "Mâm xoay cẩu tháp Zoomlion WA6015-8A",
+    category: "Phụ tùng cẩu tháp",
+
+    shortDesc:
+      "Mâm xoay (slewing bearing) Zoomlion, mã sản phẩm trên tem 111.45.1250F, dùng cho cẩu tháp model WA6015-8A.",
+
+    description:
+      "Mâm xoay cẩu tháp Zoomlion WA6015-8A là cụm ổ quay thay thế cho cẩu tháp. Hình ảnh sản phẩm thể hiện tem nhận dạng ghi loại sản phẩm Slewing Bearing, mã sản phẩm 111.45.1250F và model cẩu WA6015-8A. Mâm xoay là cụm liên kết cho phép phần trên của cẩu quay theo thiết kế. Trước khi đặt hàng hoặc lắp đặt, vui lòng đối chiếu mã trên tem, kích thước, kiểu răng, vị trí lỗ bắt bulông và thông số kỹ thuật với thiết bị thực tế để xác nhận tương thích.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("mam_xoay_cau_thap_zoom"),
+
+    alt: "Mâm xoay cẩu tháp Zoomlion WA6015-8A, tem mã sản phẩm 111.45.1250F",
+
+    specs: [
+      { label: "Tên sản phẩm", value: "Mâm xoay (Slewing Bearing)" },
+      { label: "Thương hiệu cẩu", value: "Zoomlion" },
+      { label: "Model cẩu", value: "WA6015-8A" },
+      { label: "Mã sản phẩm trên tem", value: "111.45.1250F" },
+      {
+        label: "Số nhà máy trên tem",
+        value: "101075",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Cụm quay cẩu tháp Zoomlion",
+      },
+      {
+        label: "Lưu ý tương thích",
+        value:
+          "Đối chiếu mã phụ tùng, kích thước, kiểu răng và sơ đồ lỗ bắt bulông với thiết bị thực tế",
+      },
+    ],
+  },
+
+  {
     slug: "cuon-hut-thang-mam-xoay-cau-thap",
     name: "Cuộn hút thắng mâm xoay cẩu tháp",
     category: "Phụ tùng cẩu tháp",
