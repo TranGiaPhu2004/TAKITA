@@ -127,10 +127,10 @@ export const products: Product[] = [
   category: "Phụ tùng vận thăng",
 
   shortDesc:
-    "Bộ phòng rơi vận thăng Alimak Sweden, mã tham chiếu ghi trên tem 0196784-258, tốc độ ghi trên tem 1,30 m/s và khối lượng tối đa ghi trên tem 4.350 kg. Cần đối chiếu thông số thực tế trước khi thay thế.",
+    "Bộ phòng rơi vận thăng Alimak SC65/35 Sweden, mã tham chiếu 0196784-258, tốc độ kích hoạt ghi nhận 1,30 m/s. Cần xác nhận thông số và khả năng tương thích trước khi thay thế.",
 
   description:
-    "Bộ phòng rơi vận thăng Alimak SC65/35 Sweden là cụm thiết bị an toàn dùng trong hệ thống vận thăng, phục vụ nhu cầu thay thế, kiểm tra và bảo trì thiết bị. Trên tem nhận dạng có ghi thương hiệu ALIMAK SWEDEN, mã tham chiếu 0196784-258, tốc độ 1,30 m/s và khối lượng tối đa 4.350 kg (tương đương khoảng 9.600 lb). Do tem đã bị trầy xước, một số nội dung chưa thể đọc chính xác. Khi lựa chọn sản phẩm thay thế, cần kiểm tra mã phụ tùng, model vận thăng, thông số kỹ thuật và tài liệu của nhà sản xuất để xác nhận khả năng tương thích. Việc kiểm tra, lắp đặt và thử nghiệm bộ phòng rơi cần được thực hiện bởi nhân sự kỹ thuật có chuyên môn theo hướng dẫn của nhà sản xuất.",
+    "Bộ phòng rơi vận thăng Alimak SC65/35 Sweden là cụm thiết bị an toàn dùng trong hệ thống vận thăng. Tem sản phẩm trước đó ghi mã tham chiếu 0196784-258 và tốc độ 1,30 m/s; một số thông tin trên tem cũ khó đọc rõ. Bản vẽ kỹ thuật trong ảnh bổ sung ghi bộ phòng rơi loại SAJ50-2.0, chiều hãm CCW khi nhìn từ phía bánh răng và tốc độ kích hoạt 1,30 m/s. Vì ký hiệu SAJ50-2.0 trên bản vẽ khác với model SC65/35 trong tên sản phẩm, cần xác nhận đây đúng là bản vẽ/cấu hình của thiết bị đang chọn trước khi dùng các thông số để thay thế hoặc lắp đặt. Việc kiểm tra, lắp đặt và thử nghiệm bộ phòng rơi cần do nhân sự chuyên môn thực hiện theo tài liệu của nhà sản xuất.",
 
   price: "Liên hệ báo giá",
 
@@ -142,6 +142,10 @@ export const products: Product[] = [
     {
       src: "/images/products/bo_phong_roi_van_thang4.webp",
       alt: "Cụm bánh răng bộ phòng rơi vận thăng Alimak SC65/35 Sweden",
+    },
+    {
+      src: "/images/products/phong_roi_van_thang_alimak.webp",
+      alt: "Bộ phòng rơi Alimak SC65/35 Sweden và bản vẽ kỹ thuật kèm thông số",
     },
   ],
 
@@ -167,6 +171,18 @@ export const products: Product[] = [
       value: "1,30 m/s",
     },
     {
+      label: "Model ghi trên bản vẽ trong ảnh",
+      value: "SAJ50-2.0 type (cần xác nhận có áp dụng cho thiết bị SC65/35 này)",
+    },
+    {
+      label: "Chiều hãm ghi trên bản vẽ",
+      value: "CCW khi nhìn từ phía bánh răng",
+    },
+    {
+      label: "Tốc độ kích hoạt ghi trên bản vẽ",
+      value: "1,30 m/s",
+    },
+    {
       label: "Khối lượng tối đa ghi trên tem",
       value: "4.350 kg / 9.600 lb",
     },
@@ -185,7 +201,7 @@ export const products: Product[] = [
     {
       label: "Lưu ý tương thích",
       value:
-        "Đối chiếu mã phụ tùng, model và thông số thực tế của thiết bị",
+        "Bản vẽ trong ảnh ghi SAJ50-2.0, khác model SC65/35; xác nhận mã phụ tùng và bản vẽ đúng với thiết bị thực tế trước khi sử dụng",
     },
   ],
 },
