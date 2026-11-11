@@ -367,6 +367,43 @@ export const products: Product[] = [
   },
 
   {
+    slug: "con-lan-xe-con-cau-thap-80x52-6304",
+    name: "Con lăn xe con cẩu tháp 80×52-6304",
+    category: "Phụ tùng cẩu tháp",
+
+    shortDesc:
+      "Con lăn xe con cẩu tháp ký hiệu 80×52-6304, dùng hỗ trợ xe con di chuyển và dẫn hướng trên cần cẩu.",
+
+    description:
+      "Con lăn xe con cẩu tháp 80×52-6304 là phụ tùng thuộc cụm xe con, hỗ trợ chuyển động và dẫn hướng khi xe con di chuyển dọc theo cần cẩu. Trên ảnh sản phẩm thể hiện ký hiệu 80×52-6304 và thông tin hàng nhập chính hãng. Vui lòng đối chiếu kích thước thực tế, mã vòng bi và cấu hình lắp đặt với thiết bị trước khi thay thế; ảnh không ghi đơn vị đo cho ký hiệu kích thước.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("con_lan_xe_con_cau_thap_80x52"),
+
+    alt: "Con lăn xe con cẩu tháp ký hiệu 80×52-6304",
+
+    specs: [
+      { label: "Loại sản phẩm", value: "Con lăn xe con cẩu tháp" },
+      { label: "Ký hiệu trên ảnh", value: "80×52-6304" },
+      { label: "Vòng bi", value: "6304 (theo ký hiệu sản phẩm)" },
+      {
+        label: "Ứng dụng",
+        value: "Cụm xe con cẩu tháp",
+      },
+      {
+        label: "Công dụng",
+        value: "Hỗ trợ di chuyển và dẫn hướng xe con trên cần cẩu",
+      },
+      {
+        label: "Lưu ý tương thích",
+        value:
+          "Xác nhận kích thước, vòng bi và cấu hình lắp đặt theo mẫu thiết bị thực tế",
+      },
+    ],
+  },
+
+  {
     slug: "ban-dieu-khien-van-thang",
     name: "Bàn điều khiển vận thăng",
     category: "Phụ tùng vận thăng",
