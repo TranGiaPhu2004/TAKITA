@@ -531,6 +531,37 @@ export const products: Product[] = [
   },
 
   {
+    slug: "bulong-khung-van-thang-m24x250-10-9",
+    name: "Bulong khung vận thăng M24×250 cấp bền 10.9",
+    category: "Phụ tùng vận thăng",
+
+    shortDesc:
+      "Bulong khung vận thăng quy cách M24×250, cấp bền 10.9, hàng nhập chính hãng theo thông tin trên ảnh.",
+
+    description:
+      "Bulong khung vận thăng M24×250 cấp bền 10.9 là chi tiết liên kết dùng trong kết cấu khung vận thăng. Ảnh sản phẩm ghi quy cách M24×250, cấp bền 10.9 và thông tin nhập chính hãng. Trước khi lắp đặt, vui lòng đối chiếu kích thước, cấp bền và yêu cầu kỹ thuật với tài liệu hoặc mẫu thực tế của thiết bị.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("bulong_khung_van_thang"),
+
+    alt: "Bulong khung vận thăng M24×250 cấp bền 10.9",
+
+    specs: [
+      { label: "Loại sản phẩm", value: "Bulong khung vận thăng" },
+      { label: "Quy cách", value: "M24 × 250" },
+      { label: "Cấp bền", value: "10.9" },
+      { label: "Xuất xứ", value: "Nhập chính hãng (theo ảnh sản phẩm)" },
+      { label: "Ứng dụng", value: "Liên kết kết cấu khung vận thăng" },
+      {
+        label: "Lưu ý",
+        value:
+          "Đối chiếu kích thước, cấp bền và yêu cầu kỹ thuật trước khi lắp đặt",
+      },
+    ],
+  },
+
+  {
     slug: "mam-xoay-cau-thap-ntp-7030-16-ton",
     name: "Mâm xoay cẩu tháp NTP 7030-16 TON",
     category: "Phụ tùng cẩu tháp",
