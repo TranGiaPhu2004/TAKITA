@@ -18,6 +18,7 @@ export type Product = {
 export const categories = [
   "Phụ tùng vận thăng",
   "Phụ tùng cẩu tháp",
+  "Phụ tùng cẩu offshore",
   "Thiết bị xây dựng",
   "Phụ tùng bơm bê tông",
 ] as const;
@@ -747,6 +748,36 @@ export const products: Product[] = [
       {
         label: "Tương thích",
         value: "Đối chiếu theo mẫu và cấu hình thiết bị",
+      },
+    ],
+  },
+
+  {
+    slug: "pulley-cau-offshore",
+    name: "Pulley cẩu Offshore",
+    category: "Phụ tùng cẩu offshore",
+
+    shortDesc:
+      "Pulley dùng cho cẩu offshore, hàng nhập chính hãng với đặc điểm gia công chính xác và độ bền cao.",
+
+    description:
+      "Pulley cẩu Offshore là phụ tùng dùng trong hệ thống cẩu làm việc tại môi trường ngoài khơi. Theo thông tin trên ảnh sản phẩm, pulley là hàng nhập chính hãng, được gia công chính xác và hướng đến độ bền cao. Vui lòng cung cấp model cẩu, kích thước, kiểu rãnh và cấu hình lắp đặt để xác nhận pulley phù hợp trước khi đặt hàng.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("pulley_offshore"),
+
+    alt: "Pulley cẩu Offshore nhập chính hãng",
+
+    specs: [
+      { label: "Loại sản phẩm", value: "Pulley cẩu Offshore" },
+      { label: "Ứng dụng", value: "Hệ thống cẩu offshore" },
+      { label: "Xuất xứ", value: "Nhập khẩu chính hãng (theo ảnh sản phẩm)" },
+      { label: "Đặc điểm", value: "Gia công chính xác, độ bền cao" },
+      {
+        label: "Tương thích",
+        value:
+          "Đối chiếu model cẩu, kích thước, kiểu rãnh và cấu hình lắp đặt thực tế",
       },
     ],
   },
