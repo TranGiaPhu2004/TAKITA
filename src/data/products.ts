@@ -753,6 +753,41 @@ export const products: Product[] = [
   },
 
   {
+    slug: "pulley-dan-cap-cau-sheave-528-cap-24",
+    name: "Pulley dẫn cáp cẩu Sheave Ø528 cáp Ø24",
+    category: "Phụ tùng cẩu tháp",
+
+    shortDesc:
+      "Pulley dẫn cáp cẩu theo bản vẽ: sheave Ø528, dùng cho cáp Ø24, rãnh 45° và bán kính đáy rãnh R13.",
+
+    description:
+      "Pulley dẫn cáp cẩu Sheave Ø528 được thể hiện trên ảnh cùng thông số cáp Ø24. Bản vẽ minh họa rãnh cáp góc 45°, bán kính R13 và một số kích thước lắp đặt khác. Hình ảnh cũng nêu đặc điểm gia công chính xác, bền bỉ và vận hành ổn định. Vui lòng xác nhận đầy đủ kích thước, cấu hình ổ/bạc, vị trí lắp và yêu cầu kỹ thuật với bản vẽ thiết bị thực tế trước khi đặt hàng.",
+
+    price: "Liên hệ báo giá",
+
+    image: img("pulley_dan_cap_cau_528_24"),
+
+    alt: "Pulley dẫn cáp cẩu Sheave đường kính 528 mm, cáp đường kính 24 mm",
+
+    specs: [
+      { label: "Loại sản phẩm", value: "Pulley dẫn cáp cẩu (Sheave)" },
+      { label: "Đường kính sheave", value: "Ø528 mm" },
+      { label: "Đường kính cáp", value: "Ø24 mm" },
+      { label: "Góc rãnh", value: "45° (theo bản vẽ trên ảnh)" },
+      { label: "Bán kính đáy rãnh", value: "R13 (theo bản vẽ trên ảnh)" },
+      {
+        label: "Đặc điểm",
+        value: "Gia công chính xác, bền bỉ, vận hành ổn định",
+      },
+      {
+        label: "Lưu ý tương thích",
+        value:
+          "Đối chiếu bản vẽ, kích thước lắp đặt và cấu hình ổ/bạc với thiết bị thực tế",
+      },
+    ],
+  },
+
+  {
     slug: "pulley-cau-offshore",
     name: "Pulley cẩu Offshore",
     category: "Phụ tùng cẩu offshore",
